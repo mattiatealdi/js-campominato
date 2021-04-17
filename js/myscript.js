@@ -1,7 +1,7 @@
 var limit = 100;
 var limitComputer = 16;
 
-
+//funzione per giocare al gioco campo minato
 function playGame(arrComputer){
   var arrNumPlayed = [];
   var continueGame = true;
@@ -35,7 +35,7 @@ function playGame(arrComputer){
 
 //controllare se il nuovo numero generato è presente nell'array
 
-
+//funzione per generare un array di numeri tutti diversi tra loro
 function listNumGenerator(max, howMany){
   var arrGenerated = [];
   while(arrGenerated.length < howMany){
@@ -49,7 +49,7 @@ function listNumGenerator(max, howMany){
 
 
 
-
+/* esecuzione del gioco */
 var array = listNumGenerator(limit, limitComputer);
 playGame(array);
 
